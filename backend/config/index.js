@@ -21,9 +21,9 @@ const config = {
     // --- ACTIVE PROVIDER: Google Gemini API (100% Free via OpenAI SDK Compatibility) ---
     apiKey: process.env.OPENAI_API_KEY || process.env.GEMINI_API_KEY,
     baseURL: process.env.OPENAI_BASE_URL || "https://generativelanguage.googleapis.com/v1beta/openai/",
-    chatModel: process.env.CHAT_MODEL || "gemini-1.5-flash",
-    embeddingModel: process.env.EMBEDDING_MODEL || "text-embedding-004",
-    embeddingDimension: parseInt(process.env.EMBEDDING_DIMENSION, 10) || 768,
+    chatModel: process.env.CHAT_MODEL || "gemini-flash-lite-latest",
+    embeddingModel: process.env.EMBEDDING_MODEL || "gemini-embedding-001",
+    embeddingDimension: parseInt(process.env.EMBEDDING_DIMENSION, 10) || 3072,
 
     // --- FUTURE USE: Official Paid OpenAI Configuration (Uncomment to switch back to OpenAI GPT) ---
     /*

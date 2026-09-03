@@ -26,8 +26,9 @@ app.use(
   })
 );
 
-// API Routes
+// API Routes (supports both /api/* and direct /* endpoints)
 app.use("/api", routes);
+app.use("/", routes);
 
 // Error Handling
 app.use(notFound);
