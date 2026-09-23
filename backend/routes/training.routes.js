@@ -11,6 +11,6 @@ router.post("/add-qna", trainingController.addQnA);
 router.get("/sources", trainingController.getSources);
 router.get("/stats", trainingController.getStats);
 router.delete("/sources/:id", trainingController.deleteSource);
-router.post("/reset", trainingController.resetTraining); 
+router.post("/reset", trainingController.resetTraining);
 
 module.exports = router;
